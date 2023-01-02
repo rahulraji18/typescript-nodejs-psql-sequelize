@@ -1,0 +1,26 @@
+{
+  "name": "nodejs-complete",
+  "version": "1.0.0",
+  "description": "1. psql\r 2.  psql -U postgres {and enter your psql password}\r 3. \\l {list all db}\r //CREATE DB\r 4. CREATE DATABASE db_name;\r //TO Enter DB\r 5. \\c db_name;\r // Create Table\r 6. CREATE TABLE tbl_name(id INT, name VARCHAR(50), email VARCHAR(50), dob DATE);\r //view tables in db\r 7. \\d\r //view schema in table\r 8. \\d tbl_name;\r // drop table\r 9. DROP TABLE tbl_name;\r 10. {Serial and Bigserial, NOT NULL, PRIMARY KEY, UNIQUE}",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsnd --respawn index.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "pg": "^8.8.0",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.28.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.15",
+    "@types/node": "^18.11.18",
+    "sequelize-cli": "^6.5.2",
+    "ts-node": "^10.9.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.9.4"
+  }
+}
